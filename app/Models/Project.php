@@ -23,6 +23,10 @@ class Project extends Model
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * Define the relation with category elements.
+     * One project has one category.
+     */
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);

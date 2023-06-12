@@ -13,7 +13,7 @@ class Category extends Model
 
     /**
      * Define the relation with projects elements.
-     * One user has many projects.
+     * One category has many projects.
      */
     public function project(){
         return $this->hasMany(Project::class);
